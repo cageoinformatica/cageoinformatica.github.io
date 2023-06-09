@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+
+    <link rel="stylesheet" href="estilos_mapa.css">
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    
+    <title>Universidad Autónoma del Estado de México</title>
+     
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <h1>Campus Universitarios</h1>
+    
+            <select name="select-campus" id="select-campus">
+                <option value="-1">Selecciona el campus</option>
+                <option value="19.1321373518184, -98.7864416187359">Centro Universitario Amecameca</option>
+            </select> 
+        </div>
+    </header>
+
+    <div id="map"></div>
+    
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+
+    <footer>
+        <div>
+            <p>Diseño y visualización de la información 6I 2023A</p>
+            <div class="media-icons">
+                <a href="https://www.facebook.com/pages/Universidad-Aut%C3%B3noma-del-Estado-de-M%C3%A9xico/102011606507372"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/UAEM_MX" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer> 
+
+    <script src="script_mapa.js"></script>
+    
+</body>
+</html>
